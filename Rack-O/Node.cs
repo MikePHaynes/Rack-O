@@ -14,6 +14,7 @@ namespace Rack_O
         public Node(int value)
         {
             Value = value;
+            Next = null;
         }
 
         public void SetNext(Node next) 
