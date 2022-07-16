@@ -28,123 +28,157 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.Slot5 = new System.Windows.Forms.Button();
+            this.Slot10 = new System.Windows.Forms.Button();
+            this.Slot15 = new System.Windows.Forms.Button();
+            this.Slot20 = new System.Windows.Forms.Button();
+            this.Slot25 = new System.Windows.Forms.Button();
+            this.Slot30 = new System.Windows.Forms.Button();
+            this.Slot35 = new System.Windows.Forms.Button();
+            this.Slot40 = new System.Windows.Forms.Button();
+            this.Slot45 = new System.Windows.Forms.Button();
+            this.Slot50 = new System.Windows.Forms.Button();
+            this.Draw = new System.Windows.Forms.Button();
+            this.Discard = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // Slot5
             // 
-            this.button1.Location = new System.Drawing.Point(352, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Slot5.Location = new System.Drawing.Point(352, 415);
+            this.Slot5.Name = "Slot5";
+            this.Slot5.Size = new System.Drawing.Size(75, 23);
+            this.Slot5.TabIndex = 0;
+            this.Slot5.Text = "5";
+            this.Slot5.UseVisualStyleBackColor = true;
+            this.Slot5.Click += new System.EventHandler(this.Select);
             // 
-            // button2
+            // Slot10
             // 
-            this.button2.Location = new System.Drawing.Point(352, 386);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Slot10.Location = new System.Drawing.Point(352, 386);
+            this.Slot10.Name = "Slot10";
+            this.Slot10.Size = new System.Drawing.Size(75, 23);
+            this.Slot10.TabIndex = 1;
+            this.Slot10.Text = "10";
+            this.Slot10.UseVisualStyleBackColor = true;
+            this.Slot10.Click += new System.EventHandler(this.Select);
             // 
-            // button3
+            // Slot15
             // 
-            this.button3.Location = new System.Drawing.Point(352, 357);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Slot15.Location = new System.Drawing.Point(352, 357);
+            this.Slot15.Name = "Slot15";
+            this.Slot15.Size = new System.Drawing.Size(75, 23);
+            this.Slot15.TabIndex = 2;
+            this.Slot15.Text = "15";
+            this.Slot15.UseVisualStyleBackColor = true;
+            this.Slot15.Click += new System.EventHandler(this.Select);
             // 
-            // button4
+            // Slot20
             // 
-            this.button4.Location = new System.Drawing.Point(352, 328);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Slot20.Location = new System.Drawing.Point(352, 328);
+            this.Slot20.Name = "Slot20";
+            this.Slot20.Size = new System.Drawing.Size(75, 23);
+            this.Slot20.TabIndex = 3;
+            this.Slot20.Text = "20";
+            this.Slot20.UseVisualStyleBackColor = true;
+            this.Slot20.Click += new System.EventHandler(this.Select);
             // 
-            // button5
+            // Slot25
             // 
-            this.button5.Location = new System.Drawing.Point(352, 299);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Slot25.Location = new System.Drawing.Point(352, 299);
+            this.Slot25.Name = "Slot25";
+            this.Slot25.Size = new System.Drawing.Size(75, 23);
+            this.Slot25.TabIndex = 4;
+            this.Slot25.Text = "25";
+            this.Slot25.UseVisualStyleBackColor = true;
+            this.Slot25.Click += new System.EventHandler(this.Select);
             // 
-            // button6
+            // Slot30
             // 
-            this.button6.Location = new System.Drawing.Point(352, 270);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.Slot30.Location = new System.Drawing.Point(352, 270);
+            this.Slot30.Name = "Slot30";
+            this.Slot30.Size = new System.Drawing.Size(75, 23);
+            this.Slot30.TabIndex = 5;
+            this.Slot30.Text = "30";
+            this.Slot30.UseVisualStyleBackColor = true;
+            this.Slot30.Click += new System.EventHandler(this.Select);
             // 
-            // button7
+            // Slot35
             // 
-            this.button7.Location = new System.Drawing.Point(352, 241);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.Slot35.Location = new System.Drawing.Point(352, 241);
+            this.Slot35.Name = "Slot35";
+            this.Slot35.Size = new System.Drawing.Size(75, 23);
+            this.Slot35.TabIndex = 6;
+            this.Slot35.Text = "35";
+            this.Slot35.UseVisualStyleBackColor = true;
+            this.Slot35.Click += new System.EventHandler(this.Select);
             // 
-            // button8
+            // Slot40
             // 
-            this.button8.Location = new System.Drawing.Point(352, 212);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.Slot40.Location = new System.Drawing.Point(352, 212);
+            this.Slot40.Name = "Slot40";
+            this.Slot40.Size = new System.Drawing.Size(75, 23);
+            this.Slot40.TabIndex = 7;
+            this.Slot40.Text = "40";
+            this.Slot40.UseVisualStyleBackColor = true;
+            this.Slot40.Click += new System.EventHandler(this.Select);
             // 
-            // button9
+            // Slot45
             // 
-            this.button9.Location = new System.Drawing.Point(352, 183);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.Slot45.Location = new System.Drawing.Point(352, 183);
+            this.Slot45.Name = "Slot45";
+            this.Slot45.Size = new System.Drawing.Size(75, 23);
+            this.Slot45.TabIndex = 8;
+            this.Slot45.Text = "45";
+            this.Slot45.UseVisualStyleBackColor = true;
+            this.Slot45.Click += new System.EventHandler(this.Select);
             // 
-            // button10
+            // Slot50
             // 
-            this.button10.Location = new System.Drawing.Point(352, 154);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.Slot50.Location = new System.Drawing.Point(352, 154);
+            this.Slot50.Name = "Slot50";
+            this.Slot50.Size = new System.Drawing.Size(75, 23);
+            this.Slot50.TabIndex = 9;
+            this.Slot50.Text = "50";
+            this.Slot50.UseVisualStyleBackColor = true;
+            this.Slot50.Click += new System.EventHandler(this.Select);
+            // 
+            // Draw
+            // 
+            this.Draw.Location = new System.Drawing.Point(271, 96);
+            this.Draw.Name = "Draw";
+            this.Draw.Size = new System.Drawing.Size(75, 23);
+            this.Draw.TabIndex = 10;
+            this.Draw.Text = "Draw";
+            this.Draw.UseVisualStyleBackColor = true;
+            this.Draw.Click += new System.EventHandler(this.DrawSelect);
+            // 
+            // Discard
+            // 
+            this.Discard.Location = new System.Drawing.Point(432, 96);
+            this.Discard.Name = "Discard";
+            this.Discard.Size = new System.Drawing.Size(75, 23);
+            this.Discard.TabIndex = 11;
+            this.Discard.Text = "Discard";
+            this.Discard.UseVisualStyleBackColor = true;
+            this.Discard.Click += new System.EventHandler(this.DiscardSelect);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Discard);
+            this.Controls.Add(this.Draw);
+            this.Controls.Add(this.Slot50);
+            this.Controls.Add(this.Slot45);
+            this.Controls.Add(this.Slot40);
+            this.Controls.Add(this.Slot35);
+            this.Controls.Add(this.Slot30);
+            this.Controls.Add(this.Slot25);
+            this.Controls.Add(this.Slot20);
+            this.Controls.Add(this.Slot15);
+            this.Controls.Add(this.Slot10);
+            this.Controls.Add(this.Slot5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -153,16 +187,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button Slot5;
+        private System.Windows.Forms.Button Slot10;
+        private System.Windows.Forms.Button Slot15;
+        private System.Windows.Forms.Button Slot20;
+        private System.Windows.Forms.Button Slot25;
+        private System.Windows.Forms.Button Slot30;
+        private System.Windows.Forms.Button Slot35;
+        private System.Windows.Forms.Button Slot40;
+        private System.Windows.Forms.Button Slot45;
+        private System.Windows.Forms.Button Slot50;
+        private System.Windows.Forms.Button Draw;
+        private System.Windows.Forms.Button Discard;
     }
 }
 

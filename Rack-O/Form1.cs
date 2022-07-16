@@ -16,5 +16,20 @@ namespace Rack_O
         {
             InitializeComponent();
         }
+
+        private void Select(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DrawSelect(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DiscardSelect(object sender, EventArgs e)
+        {
+
+        }
     }
 }
