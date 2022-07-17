@@ -40,6 +40,7 @@
             this.Slot50 = new System.Windows.Forms.Button();
             this.Draw = new System.Windows.Forms.Button();
             this.Discard = new System.Windows.Forms.Button();
+            this.Server = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Slot5
@@ -162,11 +163,22 @@
             this.Discard.UseVisualStyleBackColor = true;
             this.Discard.Click += new System.EventHandler(this.DiscardSelect);
             // 
+            // Server
+            // 
+            this.Server.Location = new System.Drawing.Point(12, 12);
+            this.Server.Name = "Server";
+            this.Server.Size = new System.Drawing.Size(75, 23);
+            this.Server.TabIndex = 12;
+            this.Server.Text = "Host";
+            this.Server.UseVisualStyleBackColor = true;
+            this.Server.Click += new System.EventHandler(this.Host);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Server);
             this.Controls.Add(this.Discard);
             this.Controls.Add(this.Draw);
             this.Controls.Add(this.Slot50);
@@ -199,6 +211,7 @@
         private System.Windows.Forms.Button Slot50;
         private System.Windows.Forms.Button Draw;
         private System.Windows.Forms.Button Discard;
+        private System.Windows.Forms.Button Server;
     }
 }
 
