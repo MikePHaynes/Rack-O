@@ -16,9 +16,9 @@ namespace Rack_O
     public partial class Form1 : Form
     {
         public Player[] Players { get; set; }
-        Stack Deck { get; set; }
-        Stack Discarded { get; set; }
-        int Choice { get; set; }
+        public Stack Deck { get; set; }
+        public Stack Discarded { get; set; }
+        public int Choice { get; set; }
 
         public Form1()
         {
@@ -35,26 +35,39 @@ namespace Rack_O
             switch(button.Name)
             {
                 case "Slot5":
+                    Players[0].Deck[0] = Choice;
                     break;
                 case "Slot10":
+                    Players[0].Deck[1] = Choice;
                     break;
                 case "Slot15":
+                    Players[0].Deck[2] = Choice;
                     break;
                 case "Slot20":
+                    Players[0].Deck[3] = Choice;
                     break;
                 case "Slot25":
+                    Players[0].Deck[4] = Choice;
                     break;
                 case "Slot30":
+                    Players[0].Deck[5] = Choice;
                     break;
                 case "Slot35":
+                    Players[0].Deck[6] = Choice;
                     break;
                 case "Slot40":
+                    Players[0].Deck[7] = Choice;
                     break;
                 case "Slot45":
+                    Players[0].Deck[8] = Choice;
                     break;
                 case "Slot50":
+                    Players[0].Deck[9] = Choice;
                     break;
             }
+            if(Players[0].Check())
+                Application.Exit();
+            Discard.Text = toDiscard.ToString();
             Discarded.Push(new Node(toDiscard));
             DisableSlots();
             EnableSelections();
