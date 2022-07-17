@@ -17,6 +17,8 @@ namespace Rack_O
     {
         public Player[] Players { get; set; }
         Stack Deck { get; set; }
+        Stack Discarded { get; set; }
+        int Choice { get; set; }
 
         public Form1()
         {
@@ -28,16 +30,48 @@ namespace Rack_O
         private void Select(object sender, EventArgs e)
         {
             Button button = (Button)sender;
+            int toDiscard = int.Parse(button.Text);
+            button.Text = Choice.ToString();
+            switch(button.Name)
+            {
+                case "Slot5":
+                    break;
+                case "Slot10":
+                    break;
+                case "Slot15":
+                    break;
+                case "Slot20":
+                    break;
+                case "Slot25":
+                    break;
+                case "Slot30":
+                    break;
+                case "Slot35":
+                    break;
+                case "Slot40":
+                    break;
+                case "Slot45":
+                    break;
+                case "Slot50":
+                    break;
+            }
+            Discarded.Push(new Node(toDiscard));
+            DisableSlots();
+            EnableSelections();
         }
 
         private void DrawSelect(object sender, EventArgs e)
         {
-
+            DisableSelections();
+            Choice = Deck.Pop().Value;
+            EnableSlots();
         }
 
         private void DiscardSelect(object sender, EventArgs e)
         {
-
+            DisableSelections();
+            Choice = Discarded.Pop().Value;
+            EnableSlots();
         }
 
         private void Host(object sender, EventArgs e) // Start
@@ -50,6 +84,8 @@ namespace Rack_O
             Players[0] = new Player("Mike");
             Players[1] = new Player("Computer");
             Deck = GenerateDeck(list);
+            Discarded = new Stack();
+            Discarded.Push(Deck.Pop());
             for (var i = 0; i < (Players.Length * 10); i++)
                 Players[i % Players.Length].AddCard(Deck.Pop());
             Slot5.Text = Players[0].Deck[0].ToString();
@@ -62,6 +98,8 @@ namespace Rack_O
             Slot40.Text = Players[0].Deck[7].ToString();
             Slot45.Text = Players[0].Deck[8].ToString();
             Slot50.Text = Players[0].Deck[9].ToString();
+            Discard.Text = Discarded.Top.Value.ToString();
+            DisableSlots();
         }
 
         private Stack GenerateDeck(List<int> list)
@@ -75,6 +113,46 @@ namespace Rack_O
                 list.RemoveAt(index);
             }
             return deck;
+        }
+
+        private void DisableSlots()
+        {
+            Slot5.Enabled = false;
+            Slot10.Enabled = false;
+            Slot15.Enabled = false;
+            Slot20.Enabled = false;
+            Slot25.Enabled = false;
+            Slot30.Enabled = false;
+            Slot35.Enabled = false;
+            Slot40.Enabled = false;
+            Slot45.Enabled = false;
+            Slot50.Enabled = false;
+        }
+
+        private void EnableSlots()
+        {
+            Slot5.Enabled = true;
+            Slot10.Enabled = true;
+            Slot15.Enabled = true;
+            Slot20.Enabled = true;
+            Slot25.Enabled = true;
+            Slot30.Enabled = true;
+            Slot35.Enabled = true;
+            Slot40.Enabled = true;
+            Slot45.Enabled = true;
+            Slot50.Enabled = true;
+        }
+
+        private void DisableSelections()
+        {
+            Discard.Enabled = false;
+            Draw.Enabled = false;
+        }
+
+        private void EnableSelections()
+        {
+            Discard.Enabled = true;
+            Draw.Enabled = true;
         }
     }
 }
