@@ -78,6 +78,8 @@ namespace Rack_O
             DisableSelections();
             Choice = Deck.Pop().Value;
             Message.Text = $"You drew a {Choice}!";
+            if (Deck.Size == 0)
+                Rerack();
             EnableSlots();
         }
 
@@ -167,6 +169,14 @@ namespace Rack_O
         {
             Discard.Enabled = true;
             Draw.Enabled = true;
+        }
+
+        private void Rerack()
+        {
+            while(Discarded.Size > 1)
+            {
+                Deck.Push(Discarded.Pop());
+            }
         }
     }
 }
