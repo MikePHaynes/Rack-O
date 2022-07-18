@@ -23,8 +23,8 @@ namespace Rack_O
         public Form1()
         {
             InitializeComponent();
-
-            
+            DisableSelections();
+            DisableSlots();
         }
 
         private void Select(object sender, EventArgs e)
@@ -77,6 +77,7 @@ namespace Rack_O
         {
             DisableSelections();
             Choice = Deck.Pop().Value;
+            Message.Text = $"You drew a {Choice}!";
             EnableSlots();
         }
 
@@ -112,7 +113,7 @@ namespace Rack_O
             Slot45.Text = Players[0].Deck[8].ToString();
             Slot50.Text = Players[0].Deck[9].ToString();
             Discard.Text = Discarded.Top.Value.ToString();
-            DisableSlots();
+            EnableSelections();
         }
 
         private Stack GenerateDeck(List<int> list)
